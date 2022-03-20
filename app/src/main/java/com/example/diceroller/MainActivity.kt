@@ -6,11 +6,16 @@ import android.widget.ImageView
 import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
 
-val SIDES: Int = 6
-val LUCKY1 = 1
-val LUCKY2 = 2
 
 class MainActivity : AppCompatActivity() {
+
+    // Below is initializing static constant equivalent in Java
+    companion object {
+        const val SIDES: Int = 6
+        const val LUCKY1 = 1
+        const val LUCKY2 = 2
+    }
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
