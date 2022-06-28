@@ -44,6 +44,7 @@ class MainActivity : AppCompatActivity() {
             Toast.makeText(this, "You're LUCKY!", Toast.LENGTH_SHORT).show()
         }
 
+        // We do this for screen readers accessibility
         imageView1.contentDescription = tv1Val.toString()
         imageView2.contentDescription = tv2Val.toString()
 
